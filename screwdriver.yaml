@@ -1,0 +1,11 @@
+shared:
+  image: node:14
+jobs:
+  job-1:
+    requires: [ ~commit ]
+    steps:
+      - test: echo "test"
+  job-4:
+    requires: [  ]
+    steps:
+      - test: echo "test"
