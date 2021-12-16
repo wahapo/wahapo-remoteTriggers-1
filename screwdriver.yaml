@@ -6,6 +6,6 @@ jobs:
     steps:
       - test: echo "test"
   job-4:
-    requires: [  ]
+    requires: [ sd@8232:job-31, sd@8232:job-32 ]
     steps:
       - test: echo "test"
